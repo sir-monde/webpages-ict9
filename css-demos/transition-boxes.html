@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition Practice</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        /* Common box style */
+        .box {
+            width: 120px;
+            height: 120px;
+            margin: 15px auto;
+            background-color: blue;
+
+            transition-duration: 1s;
+        }
+
+        /* BOX 1: Color change */
+        .box1 {
+            transition-property: background-color;
+        }
+
+        .box1:hover {
+            background-color: red;
+        }
+
+        /* BOX 2: Width change */
+        .box2 {
+            transition-property: width;
+        }
+
+        .box2:hover {
+            width: 200px;
+        }
+
+        /* BOX 3: Height change */
+        .box3 {
+            transition-property: height;
+        }
+
+        .box3:hover {
+            height: 200px;
+        }
+
+        /* BOX 4: Color and width */
+        .box4 {
+            transition-property: background-color, width;
+        }
+
+        .box4:hover {
+            background-color: green;
+            width: 200px;
+        }
+
+        /* BOX 5: Width and height */
+        .box5 {
+            transition-property: width, height;
+        }
+
+        .box5:hover {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Hover Over Each Box</h2>
+    <p>Color transition</p>
+    <div class="box box1"></div>
+    <p>Width Transition</p>
+    <div class="box box2"></div>
+    <p>Height Transition</p>
+    <div class="box box3"></div>
+    <p>Color and Width</p>
+    <div class="box box4"></div>
+    <p>Width and Height</p>
+    <div class="box box5"></div>
+
+</body>
+</html>
