@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition Activity</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* TEXT */
+        .text {
+            font-size: 24px;
+            color: black;
+            transition-property: color, font-size;
+            transition-duration: 0.5s;
+        }
+
+        .text:hover {
+            color: blue;
+            font-size: 30px;
+        }
+
+        /* LINK */
+        .link {
+            margin: 20px;
+            color: green;
+            text-decoration: none;
+            font-size: 18px;
+            transition-property: color, letter-spacing, font-weight;
+            transition-duration: 0.5s;
+        }
+
+        .link:hover {
+            color: red;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        /* IMAGE */
+        .image {
+            width: 150px;
+            margin: 20px;
+            transition-property: transform, opacity;
+            transition-duration: 0.5s;
+        }
+
+        .image:hover {
+            transform: scale(1.2);
+            opacity: 0.7;
+        }
+
+        /* BUTTON */
+        .btn {
+            background-color: blue;
+            color: white;
+            padding: 12px 25px;
+            border: 2px solid blue;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition-property: background-color, transform, border;
+            transition-duration: 0.5s;
+        }
+
+        .btn:hover {
+            background-color: purple;
+            transform: scale(1.2);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="text">Hover Over This Text</h2>
+    <a href="#" class="link">Hover Over This Link</a>
+    <br>
+    <img src="https://pbs.twimg.com/profile_images/1907254269654548480/CoYAUUza.jpg" class="image">
+    <br><br>
+    <button class="btn">Hover Button</button>
+
+</body>
+</html>
